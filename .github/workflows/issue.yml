@@ -5,17 +5,6 @@ on:
       - reopened
       - opened
 jobs:
-  label_issues:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - run: gh issue edit "$NUMBER" --add-label "$LABELS"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          NUMBER: ${{ github.event.issue.number }}
-          LABELS: github-demo
 
   add-comment:
     runs-on: ubuntu-latest
@@ -31,4 +20,17 @@ jobs:
           BODY: >
             You have opened an issue. I have automatically labeled it.
             :sparkles: Thank you for your contribution! :sparkles:
+
+  label-and-close-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - run: gh issue edit "$NUMBER" --add-label "$LABELS" && gh issue close "$NUMBER"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          LABELS: github-demo
+
 
