@@ -18,8 +18,8 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
-            You have opened an issue. I have automatically labeled it.
-            :sparkles: Thank you for your contribution! :sparkles:
+            You have opened an issue. I will  automatically label and close it.
+            :boom: Thank you for your contribution!! :boom:
 
   label-and-close-issue:
     runs-on: ubuntu-latest
