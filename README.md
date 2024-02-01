@@ -12,3 +12,9 @@ Try opening and issue and submitting a sample bug report:
 4. Select "Reference in New Issue"
 5. Add a title for your issue, and enter sample text explaining your observations.
 6. Submit the issue and watch as it is received and processed.
+
+## Fork
+
+Create your own copy of this repository by forking it.
+
+1. 
