@@ -1,0 +1,20 @@
+name: Merge Auto
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+
+  auto-close:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add merge
+        run: gh pr merge --auto
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+
