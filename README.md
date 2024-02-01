@@ -20,3 +20,6 @@ Create your own copy of this repository by forking it.
 1. Click on the "Fork" link in the upper-right of the main page of this repository. Or click [here](https://github.com/nmagee/ds2002-nem2p/fork)
 2. Select an account or organization for the fork to live in. It is customary to name the fork repository the same as its upstream. You can fork just the `main` branch.
 3. Once the fork is created, you can now clone the repository to your local workstation and add/commit/pull/push freely.
+4. Syncing changes:
+   - To synchronize your fork with changes in the uptream, click the "Sync Fork" button.
+   - To synchronize changes in your fork with the upstream, submit a Pull Request.
