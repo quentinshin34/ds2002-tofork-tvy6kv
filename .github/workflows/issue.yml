@@ -2,7 +2,6 @@ name: Label Issues
 on:
   issues:
     types:
-      - reopened
       - opened
 jobs:
 
@@ -18,7 +17,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
-            You have opened an issue. I will  automatically label and close it.
+            You have opened an issue. I will automatically label and close it.
             :boom: Thank you for your contribution!! :boom:
 
   label-close-issue:
@@ -32,5 +31,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          LABELS: github-demo
+          LABELS: bug
 
