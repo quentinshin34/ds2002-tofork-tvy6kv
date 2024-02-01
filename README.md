@@ -24,4 +24,4 @@ Create your own copy of this repository by forking it.
    - To synchronize your fork with changes in the uptream, click the "Sync Fork" button.
    - To synchronize changes in your fork with the upstream, submit a Pull Request using the "Contribute" button.
 
-## Rebase
+.
