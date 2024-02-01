@@ -13,7 +13,7 @@ jobs:
       issues: write
     steps:
       - name: Add merge
-        run: gh pr merge main --auto
+        run: gh pr merge -m --auto
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
