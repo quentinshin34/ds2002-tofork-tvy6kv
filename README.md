@@ -24,4 +24,9 @@ Create your own copy of this repository by forking it.
    - To synchronize your fork with changes in the uptream, click the "Sync Fork" button.
    - To synchronize changes in your fork with the upstream, submit a Pull Request using the "Contribute" button.
 
-.
+## Students
+
+1. Create a new file in your fork. Name it with the path `students/<USERID>/README.md`
+2. Edit the README file to include your name, your home town, and your year at UVA.
+3. Commit the file to your fork.
+4. Submit a Pull Request back to the upstream repo.
