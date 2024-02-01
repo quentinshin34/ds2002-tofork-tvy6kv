@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# Here are some imports for this file to run.
+# remember to install uwsgi if you want to run locally
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
